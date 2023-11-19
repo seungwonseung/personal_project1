@@ -202,23 +202,10 @@
         <div class="contents">
             <div class="back_bread">
                 <div class="breadcrumb">
-                    <p><a href="">HOME</a> &gt; <a href="">TeenTalk 소개</a></p>
+                    <p><a href="">HOME</a> &gt; <a href="">승원스쿨 소개</a></p>
                 </div>
             </div>
-            <div class="tab_box">
-                <ul>
-                    <li><label for="com">TeenTalk 소개</label></li>
-                    <li><label for="map1">오시는길</label></li>
-                </ul>
-                <!-- <ul>
-                    <li><a href="#com">회사개요</a></li>
-                    <li><a href="#greet">인사말</a></li>
-                    <li><a href="#history">회사연혁</a></li>
-                    <li><a href="#map">오시는길</a></li>
-                </ul> -->
-            </div>
 
-            <input type="radio" name="ra1" class="ra1" id="com" checked/>
             <section class="page" id="com">
                 <div class="page_wrap">
                     <h2 class="page_tit">승원스쿨은?</h2>
@@ -228,33 +215,6 @@
                         <h3 class="con_tit"><span class="highlight">항상 노력</span>하겠습니다.</h3>
                     </div>
                     <img src="../img/ogu2.png" alt="" class="com_img">
-                </div>
-            </section>
-
-            <input type="radio" name="ra1" class="ra1" id="map1"/>
-            <section class="page" id="map1">
-                <div class="page_wrap">
-                    <h2 class="page_tit">오시는길</h2>
-                    <div class="maparea">
-                        <div id="map" style="width:500px;height:400px;"></div>
-                        <!-- 보안성을 위해 자바스크립트에서 실행후 불러옴-->
-                        <script type="text/javascript" src="../api/kakaoMap.js"></script>
-                    </div>
-                        <h3>TEENTALK 본사</h3>
-                        <div class="address">
-                            <p class="tit">ADDRESS</p>
-                            <p class="cnt">서울시 금천구 가산로 9길 54</p>
-                            <p class="cnt">[가산디지털단지 6번 출구 도보 15분 이내]</p>
-                        </div>
-                        <div class="tel">
-                            <p class="tit">TEL</p>
-                            <p class="cnt">1577-0902</p>
-                        </div>
-                        <div class="fax">
-                            <p class="tit">FAX</p>
-                            <p class="cnt">02-866-9309</p>
-                        </div>
-                    </div>
                 </div>
             </section>
         </div>

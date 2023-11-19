@@ -50,7 +50,7 @@
         .contents {
             clear:both;
             min-height: 100vh;
-            background-image: url("../img/login.jpg");
+
             background-repeat: no-repeat;
             background-position: center -250px;
         }
@@ -64,7 +64,6 @@
         .page {
             clear:both;
             width: 100vw;
-            height: 100vh;
             position:relative;
         }
         .page::after {
@@ -231,12 +230,9 @@
         <%@ include file="../header.jsp" %>
     </header>
     <div class="contents" id="contents">
-        <div class="breadcrumb">
-            <p><a href="">HOME</a> &gt; <span>정보수정</span></p>
-        </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">정보수정</h2>
+                <h4 class="page_tit">정보수정</h4>
                 <form name="frm2" action="modifypro.jsp" method="post" onsubmit="return inform(this)">
                     <table class="tb1">
                         <tbody>
@@ -300,7 +296,7 @@
         </section>
     </div>
     <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
+        <%@ include file="../footer2.jsp" %>
     </footer>
 </div>
 </body>

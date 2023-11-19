@@ -55,136 +55,134 @@
             font-size: 120%;
             font: inherit;
             vertical-align: baseline;
-        }
-        .contents {
-            clear: both;
-            min-height: 100vh;
-            background-image: url("../img/login.jpg");
-            background-repeat: no-repeat;
-            background-position: center -250px;
-        }
-        .contents::after {
-            content: "";
-            clear: both;
-            display: block;
-            width: 100%;
-        }
+            .contents {
+                clear: both;
+                min-height: 100vh;
+                background-repeat: no-repeat;
+                background-position: center -250px;
+            }
+            .contents::after {
+                content: "";
+                clear: both;
+                display: block;
+                width: 100%;
+            }
 
-        .page {
-            clear: both;
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-        }
-        .page::after {
-            content: "";
-            display: block;
-            width: 100%;
-            clear: both;
-        }
+            .page {
+                clear: both;
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                margin-bottom: 100px;
+            }
+            .page::after {
+                content: "";
+                display: block;
+                width: 100%;
+                clear: both;
+            }
 
-        .page_wrap {
-            clear: both;
-            width: 1200px;
-            height: auto;
-            margin: 0 auto;
+            .page_wrap {
+                clear: both;
+                width: 1200px;
+                height: auto;
+                margin: 0 auto;
+                margin-top: 55px;
 
-        }
-        .page_tit {
-            font-size: 48px;
-            text-align: center;
-            /*padding-top: 0.7em;*/
-            color: #fff;
-            padding-bottom: 1.3em;
-        }
+            }
+            .page_tit {
+                font-size: 48px;
+                text-align: center;
+                /*padding-top: 0.7em;*/
+                color: #0e0f1a;
+            }
 
-        .breadcrumb {
-            clear: both;
-            width: 1200px;
-            margin: 0 auto;
-            text-align: right;
-            color: #fff;
-            padding-top: 28px;
-            padding-bottom: 28px;
-        }
-        .breadcrumb a {
-            color: #fff;
+            .breadcrumb {
+                clear: both;
+                width: 1200px;
+                margin: 0 auto;
+                text-align: right;
+                color: #fff;
+                padding-top: 28px;
+                padding-bottom: 28px;
+            }
+            .breadcrumb a {
+                color: #fff;
 
-        }
+            }
 
-        /* 테이블 스타일 */
-        .tb1 {
-            width: 80%;
-            margin: 50px auto;
-            font-size: 20px;
-            border-collapse: collapse;
-        }
-        .tb1 th {
-            background-color: #527AF2;
-            color: #fff;
-            padding: 16px;
-            border: 1px solid #527AF2;
+            /* 테이블 스타일 */
+            .tb1 {
+                width: 1250px;
+                height: 500px;
+                margin: 50px auto;
+                font-size: 20px;
+                border-collapse: collapse;
+            }
+            .tb1 th {
+                background-color: #0e0f1a;
+                color: #fff;
+                padding: 16px;
+                border: 1px solid #0e0f1a;
 
-        }
-        .tb1 td {
-            padding: 12px 16px;
-            border: 1px solid #ddd;
-            text-align: center;
-            line-height: 24px;
+            }
+            .tb1 td {
+                padding: 12px 16px;
+                border: 1px solid #ddd;
+                text-align: center;
+                line-height: 24px;
 
-        }
-        .tb1 th:first-child {
-            width: 40px;
-        }
+            }
+            .tb1 th:first-child {
+                width: 40px;
+            }
 
-        .tb1 tbody {
+            .tb1 tbody {
 
+            }
+
+            .tb1 .item1 {
+                width: 8%;
+            }
+            .tb1 .item2 {
+                width: 60%;
+
+                text-align: left;
+            }
+            .tb1 .item3 {
+                width: 12%;
+            }
+
+            /* 기타 버튼 스타일 */
+            .inbtn {
+                display: block;
+                border-radius: 10px;
+                min-width: 60px;
+                padding-left: 24px;
+                padding-right: 24px;
+                text-align: center;
+                line-height: 38px;
+                background-color: #527AF2;
+                color: #fff;
+                font-size: 18px;
+                float: right;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+            }
+            .inbtn:hover {
+                background-color: #666666;
+            }
+
+            .btn_group {
+                margin-top: -38px;
+                z-index: 1000;
+                position: relative;
+            }
+            .btn_group p {
+                float: right;
+            }
         }
-
-        .tb1 .item1 {
-            width: 8%;
-        }
-        .tb1 .item2 {
-            width: 60%;
-
-            text-align: left;
-        }
-        .tb1 .item3 {
-            width: 12%;
-        }
-
-        /* 기타 버튼 스타일 */
-        .inbtn {
-            display: block;
-            border-radius: 10px;
-            min-width: 60px;
-            padding-left: 24px;
-            padding-right: 24px;
-            text-align: center;
-            line-height: 38px;
-            background-color: #527AF2;
-            color: #fff;
-            font-size: 18px;
-            float: right;
-            cursor: pointer;
-            transition: background-color 0.3s;
-
-        }
-        .inbtn:hover {
-            background-color: #666666;
-        }
-
-        .btn_group {
-            margin-top: -38px;
-            z-index: 1000;
-            position: relative;
-        }
-        .btn_group p {
-            float: right;
-
-        }
-
-
     </style>
 </head>
 <%
@@ -315,7 +313,7 @@
         </section>
     </div>
     <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
+        <%@ include file="../footer2.jsp" %>
     </footer>
 </div>
 </body>

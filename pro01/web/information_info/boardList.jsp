@@ -39,7 +39,7 @@
         .contents {
             clear: both;
             min-height: 150vh;
-            background-image: url("../img/login.jpg");
+
             background-repeat: no-repeat;
             background-position: center -250px;
         }

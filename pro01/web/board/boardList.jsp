@@ -59,7 +59,6 @@
         .contents {
             clear: both;
             min-height: 100vh;
-            background-image: url("../img/login.jpg");
             background-repeat: no-repeat;
             background-position: center -250px;
         }
@@ -75,6 +74,7 @@
             width: 100vw;
             height: 100vh;
             position: relative;
+            margin-bottom: 100px;
         }
         .page::after {
             content: "";
@@ -88,6 +88,7 @@
             width: 1200px;
             height: auto;
             margin: 0 auto;
+            margin-top: 55px;
 
         }
         .page_tit {
@@ -95,7 +96,7 @@
             text-align: center;
             /*padding-top: 0.7em;*/
             color: #fff;
-            padding-bottom: 1.3em;
+            padding-top: 70px;
         }
 
         .breadcrumb {
@@ -120,10 +121,10 @@
             border-collapse: collapse;
         }
         .tb1 th {
-            background-color: #527AF2;
+            background-color: #0e0f1a;
             color: #fff;
             padding: 16px;
-            border: 1px solid #527AF2;
+            border: 1px solid #0e0f1a;
 
         }
         .tb1 td {
@@ -185,6 +186,7 @@
         }
 
 
+
     </style>
 </head>
 
@@ -231,12 +233,9 @@
         <%@ include file="../header.jsp" %>
     </header>
     <div class="contents" id="contents">
-        <div class="breadcrumb">
-            <p><a href="/">HOME</a> &gt; <a href="/board/baordList.jsp">Notice</a></p>
-        </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">공지사항</h2>
+                <h2 class="page_tit" style="color: #0e0f1a">자유게시판</h2>
                 <table class="tb1" id="myTable">
                     <thead>
                         <tr>
@@ -309,7 +308,7 @@
         </section>
     </div>
     <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
+        <%@ include file="../footer2.jsp" %>
     </footer>
 </div>
 </body>

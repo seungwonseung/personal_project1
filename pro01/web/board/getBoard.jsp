@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../css/ft.css">
     <style>
         /* 본문 영역 스타일 */
-        .contents { clear:both; min-height: 180vh; background-image: url("../img/login.jpg");
+        .contents { clear:both; min-height: 180vh;
             background-repeat: no-repeat; background-position: center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -305,8 +305,7 @@
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">게시글</h2>
-                <table class="tb1">
+                <table class="tb1" style="margin-top: 70px">
                     <%
                         String id2 = boardList.get(0).getAuthor();
                     %>
@@ -436,7 +435,7 @@
         </section>
     </div>
     <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
+        <%@ include file="../footer2.jsp" %>
     </footer>
 </div>
 </body>

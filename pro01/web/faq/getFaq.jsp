@@ -57,7 +57,7 @@
             font: inherit;
             vertical-align: baseline;
         }
-        .contents { clear:both; min-height: 100vh; background-image: url("../img/login.jpg");
+        .contents { clear:both; min-height: 100vh;
             background-repeat: no-repeat; background-position: center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -161,9 +161,6 @@
         <%@ include file="../header.jsp" %>
     </header>
     <div class="contents" id="contents">
-        <div class="breadcrumb">
-            <p><a href="/">HOME</a> &gt; <a href="/faq/faqList.jsp">FAQ</a> &gt; <a href="/faq/faqList.jsp">FAQ 상세</a></p>
-        </div>
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">FAQ 상세</h2>
@@ -207,7 +204,7 @@
         </section>
     </div>
     <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
+        <%@ include file="../footer2.jsp" %>
     </footer>
 </div>
 </body>

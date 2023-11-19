@@ -32,16 +32,17 @@
     <div class="container py-3">
         <div class="d-flex align-items-center">
             <img src="${path2}/img/logo_main1.png" class="rounded float-start" alt="로고">
-            </a>
             <% if(sid!=null) { %>
-            <div class="ms-auto d-flex align-items-center">
-                <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>${sname}님 반갑습니다!</small>
+            <div class="btn_group" role="group" aria-label="button" style="margin-left: 700px">
+                <a href="${path2}/member/mypage.jsp" class="btn btn-join btn-outline-light" role="button">마이페이지</a>
+                <a href="${path2}/member/logout.jsp" class="btn btn-login btn-outline-light" role="button">로그아웃</a>
             </div>
-            <% } %>
+            <% } else {%>
         <div class="btn_group" role="group" aria-label="button">
-            <a href="../member/term.jsp" class="btn btn-join btn-outline-light" role="button">회원가입</a>
-            <a href="../member/login.jsp" class="btn btn-login btn-outline-light" role="button">로그인</a>
+            <a href="${path2}/member/term.jsp" class="btn btn-join btn-outline-light" role="button">회원가입</a>
+            <a href="${path2}/member/login.jsp" class="btn btn-login btn-outline-light" role="button">로그인</a>
         </div>
+            <% } %>
         </div>
     </div>
 </div>
@@ -64,19 +65,19 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link " data-bs-toggle="dropdown">커뮤니티 게시판</a>
                         <div class="dropdown-menu bg-white rounded-0 rounded-bottom m-0">
-                            <a href="feature.html" class="dropdown-item">자유게시판</a><br>
-                            <a href="team.html" class="dropdown-item">부모님 게시판</a><br>
-                            <a href="testimonial.html" class="dropdown-item">선생님 게시판</a>
+                            <a href="${path2}/board/boardList.jsp" class="dropdown-item">자유게시판</a><br>
+                            <a href="${path2}/board_stu/boardStuList.jsp" class="dropdown-item">학생 게시판</a><br>
+                            <a href="${path2}/board_tea/boardTeaList.jsp" class="dropdown-item">선생님 게시판</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link " data-bs-toggle="dropdown">정보 게시판</a>
                         <div class="dropdown-menu bg-white rounded-0 rounded-bottom m-0">
-                            <a href="feature.html" class="dropdown-item">공지사항</a><br>
-                            <a href="team.html" class="dropdown-item">QnA</a><br>
-                            <a href="testimonial.html" class="dropdown-item">FAQ</a>
+                            <a href="${path2}/qna_career/qnaList.jsp" class="dropdown-item">진로 상담</a><br>
+                            <a href="${path2}/faq/faqList.jsp" class="dropdown-item">FAQ</a>
                         </div>
                     </div>
+                </div>
             </div>
         </nav>
     </div>

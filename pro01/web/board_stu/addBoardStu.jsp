@@ -44,16 +44,16 @@
             font: inherit;
             vertical-align: baseline;
         }
-        .contents { clear:both; min-height: 100vh; background-image: url("../img/login.jpg");
+        /* 본문 영역 스타일 */
+        .contents { clear:both; min-height: 100vh;
             background-repeat: no-repeat; background-position: center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page { clear:both; width: 100vw; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center;  color:#fff;
-            padding-bottom: 1.3em; }
+        .page_tit { font-size:48px; text-align: center;  color:#0e0f1a;}
 
         .breadcrumb { clear:both;
             width:1200px; margin: 0 auto; text-align: right; color:#fff;
@@ -115,13 +115,9 @@
         <%@ include file="../header.jsp" %>
     </header>
     <div class="contents" id="contents">
-        <div class="breadcrumb">
-            <p><a href="/">HOME</a> &gt; <a href="/board_stu/boardStuList.jsp">학생게시판</a>
-                &gt; <a href="/board_stu/addStuBoard.jsp">게시글 작성</a></p>
-        </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">게시글 작성</h2>
+                <h2 class="page_tit" style="margin-top: 100px">글쓰기</h2>
                 <form action="addBoardStupro.jsp" id="login_frm" class="frm">
                     <table class="tb1">
                         <tbody>
@@ -144,7 +140,7 @@
         </section>
     </div>
     <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
+        <%@ include file="../footer2.jsp" %>
     </footer>
 </div>
 </body>

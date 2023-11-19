@@ -46,7 +46,7 @@
             font: inherit;
             vertical-align: baseline;
         }
-        .contents { clear:both; min-height: 100vh; background-image: url("../img/login.jpg");
+        .contents { clear:both; min-height: 100vh;
             background-repeat: no-repeat; background-position: center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -213,7 +213,7 @@
         </section>
     </div>
     <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
+        <%@ include file="../footer2.jsp" %>
     </footer>
 </div>
 </body>
